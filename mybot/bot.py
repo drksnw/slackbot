@@ -7,9 +7,9 @@ import aiohttp
 
 import websockets
 
+from config import DEBUG, TOKEN
 
-DEBUG = True
-TOKEN = "xoxb-38193906149-2S3X2BaWDc5jk62h2jKjmZgc"
+
 RUNNING = True
 
 
