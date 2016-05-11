@@ -16,7 +16,7 @@ RUNNING = True
 async def producer():
     """Produce a ping message every 10 seconds."""
     await asyncio.sleep(10)
-    return json.dumps({"type": "ping"})
+    return json.dumps({"id": 1, "type": "message", "channel":"D145QQ6S3", "user":"U0MBP3K6Y", "text":"Ceci est un message"})
 
 
 async def consumer(message):
