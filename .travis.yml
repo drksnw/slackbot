@@ -3,4 +3,4 @@ python:
   - "3.5"
 
 install: "pip install aiohttp websocket pytest"
-script: py.test --doctest-module mybot/tests.py
+script: py.test --doctest-module mybot/*.py
