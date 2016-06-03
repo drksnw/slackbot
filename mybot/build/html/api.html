@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Explore API &mdash; WeatherBot 3.5.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '3.5.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="WeatherBot 3.5.1 documentation" href="index.html" />
+    <link rel="prev" title="Demonstration" href="demo.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="explore-api">
+<h1>Explore API<a class="headerlink" href="#explore-api" title="Permalink to this headline">¶</a></h1>
+<p>This file describes functions used by the bot.</p>
+<div class="section" id="weather-api-functions">
+<h2>Weather API Functions<a class="headerlink" href="#weather-api-functions" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="get_weather">
+<code class="descname">get_weather</code><span class="sig-paren">(</span><em>city</em><span class="optional">[</span>, <em>country='ch'</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#get_weather" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the actual weather from OpenWeatherMap API for the specified <em>city</em>.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="slack-api-functions">
+<h2>Slack API Functions<a class="headerlink" href="#slack-api-functions" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="send_message">
+<code class="descname">send_message</code><span class="sig-paren">(</span><em>chan</em>, <em>txt</em><span class="sig-paren">)</span><a class="headerlink" href="#send_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a message to the specific channel.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="consumer">
+<code class="descname">consumer</code><span class="sig-paren">(</span><em>message</em><span class="sig-paren">)</span><a class="headerlink" href="#consumer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method is called when the bot gets a <em>message</em>.
+This function parses the <em>message</em> and does something.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Explore API</a><ul>
+<li><a class="reference internal" href="#weather-api-functions">Weather API Functions</a></li>
+<li><a class="reference internal" href="#slack-api-functions">Slack API Functions</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="demo.html" title="previous chapter">Demonstration</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/api.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Fyfer Frédéric, Petitpierre Guillaume.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/api.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
