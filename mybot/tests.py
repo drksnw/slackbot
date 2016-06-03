@@ -1,17 +1,22 @@
+from bot import *
+from prototype import *
 
-def test_my_method():
-	assert 12 == my_method(3, 4), "3 * 4"
+def test_forecast_type():
+    assert type(get_forecast('Lausanne', 'CH')) == type('')
 
-def my_method(aa,bb):
-	"""
-	Returns aa * bb
+def test_sendMessage():
+    assert type(sendMessage('channel', 'txt')) == dict
 
-	>>> my_method(8, 2)
-	16
-	>>> my_method(10, 3)
-	30
-	>>> my_method(13, 12)
-	156
-	
-	"""
-	return aa*bb
+def test_stop():
+    stop()
+    from bot import RUNNING
+    assert RUNNING == False
+
+if __name__ == "__main__":
+    print('\n=== Running tests ===\n')
+
+    test_forecast_type()
+    test_sendMessage()
+    test_stop()
+
+    print('\n=== All tests passed! ===')
